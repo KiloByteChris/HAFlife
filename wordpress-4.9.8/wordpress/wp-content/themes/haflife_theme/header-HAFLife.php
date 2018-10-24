@@ -42,7 +42,9 @@
 		</div><!-- .site-branding -->
 
 		<nav id="site-navigation" class="main-navigation">
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'haflife_theme' ); ?></button>
+
+			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><i class="menu-dots fa fa-ellipsis-v" aria-hidden="true"></i>
+<?php esc_html_e( '', 'haflife_theme' ); ?></button>
 			<?php
 			wp_nav_menu( array(
 				'theme_location' => 'menu-1',

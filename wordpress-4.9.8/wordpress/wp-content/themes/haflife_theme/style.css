@@ -689,6 +689,24 @@ a:hover, a:active {
 }
 
 /* Small menu. */
+.menu-toggle {
+	float: right;
+	font-size: 3em;
+	background: rgba(0,0,0,0);
+	color: #000;
+	border-color: #000;
+	padding: 0;
+	margin: 10px 20px 10px 10px;
+}
+
+.menu-toggle:focus {
+	border-color: #000;
+}
+
+.menu-dots {
+	font-size: 4em;
+	color: #ffd700;
+}
 .menu-toggle,
 .main-navigation.toggled ul {
 	display: block;
@@ -865,7 +883,32 @@ a:hover, a:active {
 -------------------------------------------------------------------*/
 /* Home PAGE */
 
+.home-title {
+	display: none;
+}
 
+.home-tagline {
+	margin: 25% auto 10px;
+	width: 90%;
+	color: #DDD;
+	font-size: 1.75em;
+}
+
+.mission-statement {
+	color: #EEE;
+	margin: 30px auto;
+	width: 85%;
+}
+
+.home-welcome {
+	margin: 0 auto;
+	width: 90%;
+	color: #DDD;
+}
+
+.site-info-home {
+	display: none;
+}
 
 
 
