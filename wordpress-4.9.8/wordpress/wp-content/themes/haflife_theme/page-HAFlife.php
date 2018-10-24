@@ -7,7 +7,16 @@
  * @package HAFlife_theme
  */
 
+
+if(is_page('HAFLife'))
+{
+get_header('HAFLife');
+}
+else
+{
 get_header();
+}
+wp_head();
 ?>
 
 	<div id="primary" class="content-area">
@@ -17,7 +26,7 @@ get_header();
 		while ( have_posts() ) :
 			the_post();
 
-			get_template_part( 'template-parts/content', 'page' );
+			get_template_part( 'template-parts/content', 'HAFlife' );
 
 
 		endwhile; // End of the loop.
