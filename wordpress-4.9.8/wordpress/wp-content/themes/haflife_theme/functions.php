@@ -120,6 +120,8 @@ add_action( 'widgets_init', 'haflife_theme_widgets_init' );
  * Enqueue scripts and styles.
  */
 function haflife_theme_scripts() {
+	// Script that handles the fading opacity effects on the homepage
+	wp_enqueue_script( 'home_fadin', get_template_directory_uri() . '/js/home_fadin.js', array('jquery'), $ver = null);
 	wp_enqueue_style( 'haflife_theme-style', get_stylesheet_uri() );
 
 	wp_enqueue_script( 'haflife_theme-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
@@ -128,8 +130,8 @@ function haflife_theme_scripts() {
 
 	// Font Aweseome
 	// wp_enqueue_style('font-awesome', 'https://use.fontawesome.com/releases/v5.0.13/css/all.css');
-	wp_enqueue_style('font-awesome', 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
-	
+	wp_enqueue_style('font-awesome', 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css', array(), $ver = null);
+
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );

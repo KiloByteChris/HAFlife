@@ -707,6 +707,7 @@ a:hover, a:active {
 	font-size: 4em;
 	color: #ffd700;
 }
+
 .menu-toggle,
 .main-navigation.toggled ul {
 	display: block;
@@ -898,6 +899,7 @@ a:hover, a:active {
 	color: #EEE;
 	margin: 30px auto;
 	width: 85%;
+	opacity: 0;
 }
 
 .home-welcome {
