@@ -34,11 +34,18 @@
 		if ( -1 !== container.className.indexOf( 'toggled' ) ) {
 			container.className = container.className.replace( ' toggled', '' );
 			button.setAttribute( 'aria-expanded', 'false' );
-			menu.setAttribute( 'aria-expanded', 'false' );
+			// menu.setAttribute( 'aria-expanded', 'false' );
+			jQuery('.main-navigation ul').animate({width: '0%'}, [800]);
+			jQuery('.main-navigation ul').css({display: 'none'});
+			jQuery('.main-navigation li').animate({width: '0%'}, [800]);
 		} else {
 			container.className += ' toggled';
 			button.setAttribute( 'aria-expanded', 'true' );
-			menu.setAttribute( 'aria-expanded', 'true' );
+			// menu.setAttribute( 'aria-expanded', 'true' );
+			// jQuery('.main-navigation ul').animate({paddingLeft: '0'}, [800]);
+			jQuery('.main-navigation ul').animate({width: '50%'}, [800]);
+			jQuery('.main-navigation ul').css({display: 'block'});
+			jQuery('.main-navigation li').animate({width: '80%'}, [800]);
 		}
 	};
 

@@ -24,8 +24,6 @@ jQuery(document).ready( function(){
 
     //jQuery('.background-logo').animate({opacity: '.1'}, [1000000]);
     jQuery('#content').click( function() {
-        console.log(this);
-        console.log('click');
         jQuery('.home-tagline').fadeTo(800, 1);
         jQuery('.mission-statement').fadeTo(800, 1);
         jQuery('.home-welcome').fadeTo(800, 1);
