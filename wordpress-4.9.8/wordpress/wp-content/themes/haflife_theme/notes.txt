@@ -1,0 +1,14 @@
+- Create background noise. use the noise for the menu too. is the logo a transparent psd?
+- Have the menu come in from the right side
+- Can I create a swiping effect like on a cell phone using jQuery? Swipe right for menu?
+- Do I love the font? Need a paragraph font, title font is ok-ish.
+- Make the background gold color more of a yellow.
+- Add social media links to the menu on the mobile Version
+- How do I make the nav links consistent when the menu is expanding. Right now they jump around.
+- menu needs to slide out of the way rather than disappear,
+- Click anywhere on the main page to have the menu go away. Not just the menu buttons.
+- The fadin effects conflict with the main menu if you deploy the menu before the  animation
+- resize menu links to match up with golden border.
+- Add site logo to the top of the menu
+- What if I change the nav links the the butler font?
+- Document what I'm doing as I go so that I'll have a lot to say in the portfolio write up.

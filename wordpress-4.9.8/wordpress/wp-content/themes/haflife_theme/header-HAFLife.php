@@ -26,7 +26,7 @@
 	<header id="masthead" class="site-header">
 		<div class="site-branding">
 			<?php
-			//the_custom_logo();
+			// the_custom_logo();
 			if ( is_front_page() && is_home() ) :
 				?>
 				<?php
@@ -40,17 +40,17 @@
 
 			<?php endif; ?>
 		</div><!-- .site-branding -->
-
 		<nav id="site-navigation" class="main-navigation">
-
 			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><i class="menu-dots fa fa-ellipsis-v" aria-hidden="true"></i>
-<?php esc_html_e( '', 'haflife_theme' ); ?></button>
-			<?php
-			wp_nav_menu( array(
-				'theme_location' => 'menu-1',
-				'menu_id'        => 'primary-menu',
-			) );
-			?>
+				<?php esc_html_e( '', 'haflife_theme' ); ?>
+			</button>
+			<div id="mobile-menu-container">
+				<?php the_custom_logo(); ?>
+				<?php wp_nav_menu( array(
+					'theme_location' => 'menu-1',
+					'menu_id'        => 'primary-menu',
+				) );?>
+			</div><!-- #mobile-menu-container -->
 		</nav><!-- #site-navigation -->
 	</header><!-- #masthead -->
 

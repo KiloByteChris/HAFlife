@@ -645,18 +645,35 @@ a:hover, a:active {
 	/* background-color: #000; */
 }
 
-.main-navigation ul {
+#mobile-menu-container {
+	width: 0%;
 	display: none;
+	background-color: #000;
+	z-index: 9999;
+	height: 100vh;
+	border-right: 1px solid #ffd700;
+}
+
+.custom-logo-link {
+	width: 80%;
+	margin: 0px auto;
+	padding-top: 20px;
+}
+
+.main-navigation ul {
+	/* display: none; */
 	list-style: none;
 	margin: 0;
 	padding-left: 0;
 	width: 0%;
-	height: 100vh;
-	background-color: #000;
+	/* width: 50%; */
+	/* height: 100vh; */
 	border-right: 1px solid #ffd700;
+	background-color: #000;
 	position: fixed;
 	top: 100%
 	left: 100%;
+	/* z-index: 99999; */
 }
 
 .main-navigation ul ul {
@@ -693,12 +710,13 @@ a:hover, a:active {
 	position: relative;
 	line-height: 2em;
 	padding-left: 20px;
-	width: 0%;
+	/* width: 0%; */
+	/* width: inherit; */
 }
 
-.main-navigation li:first-child {
+/* .main-navigation li:first-child {
 	padding-top: 10vh;
-}
+} */
 
 .main-navigation a {
 	display: block;
