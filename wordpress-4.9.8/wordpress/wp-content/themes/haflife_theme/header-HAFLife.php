@@ -50,6 +50,9 @@
 					'theme_location' => 'menu-1',
 					'menu_id'        => 'primary-menu',
 				) );?>
+				<div id="primary-menu-contacts">
+						<?php dynamic_sidebar( 'primary-menu-contact' );?>
+				</div><!-- .primary-menu-contact -->
 			</div><!-- #mobile-menu-container -->
 		</nav><!-- #site-navigation -->
 	</header><!-- #masthead -->

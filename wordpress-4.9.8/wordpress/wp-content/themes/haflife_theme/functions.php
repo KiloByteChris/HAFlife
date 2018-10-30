@@ -113,6 +113,15 @@ function haflife_theme_widgets_init() {
 		'before_title'  => '<h2 class="widget-title">',
 		'after_title'   => '</h2>',
 	) );
+	register_sidebar( array(
+		'name'          => esc_html__( 'Contact', 'haflife_theme' ),
+		'id'            => 'primary-menu-contact',
+		'description'   => esc_html__( 'Add widgets here.', 'haflife_theme' ),
+		'before_widget' => '<section id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</section>',
+		'before_title'  => '<h2 class="widget-title">',
+		'after_title'   => '</h2>',
+	) );
 }
 add_action( 'widgets_init', 'haflife_theme_widgets_init' );
 

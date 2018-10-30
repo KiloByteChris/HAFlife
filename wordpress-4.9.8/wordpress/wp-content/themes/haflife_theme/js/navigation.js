@@ -45,7 +45,7 @@
 			button.setAttribute( 'aria-expanded', 'true' );
 			menu.setAttribute( 'aria-expanded', 'true' );
 			// jQuery('.main-navigation ul').animate({paddingLeft: '0'}, [800]);
-			jQuery('.main-navigation ul').animate({width: '50%'}, [800]);
+			jQuery('.main-navigation ul').animate({width: '100%'}, [800]);
 			// jQuery('.main-navigation ul').css({display: 'block'});
 			jQuery('#mobile-menu-container').css({display: 'block'});
 			// jQuery('.main-navigation li').animate({width: '100%'}, [800]);
