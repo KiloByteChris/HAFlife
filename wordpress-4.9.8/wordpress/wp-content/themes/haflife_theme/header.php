@@ -23,35 +23,37 @@
 <body <?php body_class(); ?>>
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'haflife_theme' ); ?></a>
-
 	<header id="masthead" class="site-header">
 		<div class="site-branding">
 			<?php
-			the_custom_logo();
+			// the_custom_logo();
 			if ( is_front_page() && is_home() ) :
 				?>
-				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 				<?php
 			else :
 				?>
-				<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
 				<?php
 			endif;
 			$haflife_theme_description = get_bloginfo( 'description', 'display' );
 			if ( $haflife_theme_description || is_customize_preview() ) :
 				?>
-				<p class="site-description"><?php echo $haflife_theme_description; /* WPCS: xss ok. */ ?></p>
+
 			<?php endif; ?>
 		</div><!-- .site-branding -->
-
 		<nav id="site-navigation" class="main-navigation">
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'haflife_theme' ); ?></button>
-			<?php
-			wp_nav_menu( array(
-				'theme_location' => 'menu-1',
-				'menu_id'        => 'primary-menu',
-			) );
-			?>
+			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><i class="menu-dots fa fa-ellipsis-v" aria-hidden="true"></i>
+				<?php esc_html_e( '', 'haflife_theme' ); ?>
+			</button>
+			<div id="mobile-menu-container">
+				<?php the_custom_logo(); ?>
+				<?php wp_nav_menu( array(
+					'theme_location' => 'menu-1',
+					'menu_id'        => 'primary-menu',
+				) );?>
+				<div id="primary-menu-contacts">
+						<?php dynamic_sidebar( 'primary-menu-contact' );?>
+				</div><!-- .primary-menu-contact -->
+			</div><!-- #mobile-menu-container -->
 		</nav><!-- #site-navigation -->
 	</header><!-- #masthead -->
 
