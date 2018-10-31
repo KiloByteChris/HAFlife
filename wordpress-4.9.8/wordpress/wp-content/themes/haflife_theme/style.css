@@ -632,37 +632,62 @@ a:focus {
 a:hover, a:active {
 	outline: 0;
 }
-
 /*--------------------------------------------------------------
 ## Menus
 --------------------------------------------------------------*/
 .main-navigation {
 	clear: both;
 	display: block;
-	float: left;
+	/* float: left; */
 	width: 100%;
 	position: fixed;
 }
 
 #mobile-menu-container {
-	width: 0%;
+	width: 50%;
 	display: none;
+	margin-left:25%;
 	background-color: #000;
 	z-index: 9999;
 	height: 100vh;
 	border-right: 1px solid #ffd700;
+	border-left: 1px solid #ffd700;
+	opacity: 0;
 }
 
-.custom-logo-link {
-	width: 80%;
+.custom-logo-link{
+	/* width: 80%; */
+	/* height: 25vh */
 	margin: 0px auto;
 	padding-top: 20px;
 }
 
+.custom-logo {
+	/* height: 20vh;
+	width: auto; */
+	margin: 0px auto;
+}
+
 .main-navigation ul {
+	font-family: 'butler';
 	list-style: none;
 	margin: 0;
 	padding-left: 0;
+	text-align: center;
+}
+
+.primary-contact-list {
+	/* text-align: center; */
+	font-size: 1.2em;
+	color: #EEE;
+}
+
+.primary-contact-list li:hover {
+	color: #ffd700;
+}
+
+.primary-contact-list li:active {
+	color: #ffd700;
 }
 
 .main-navigation ul ul {
@@ -698,8 +723,7 @@ a:hover, a:active {
 	font-size: 1.3em;
 	position: relative;
 	line-height: 2em;
-	padding-left: 20px;
-	/* width: 0%; */
+	width: 100%;
 	/* width: inherit; */
 }
 
@@ -721,7 +745,7 @@ a:hover, a:active {
 	color: #ffd700;
 }
 
-.main-navigation li:hover {
+#primary-menu li:hover {
 	border-bottom: 1px solid #ffd700;
 }
 
@@ -932,20 +956,21 @@ a:hover, a:active {
 .home-tagline {
 	font-family: 'Butler';
 	font-weight: 100;
-	margin: 10vh 0 10px 5%;
+	margin: 5vh 0 10px 5%;
 	width: 150px;
 	color: #EEE;
 	font-size: 2em;
 	opacity: 0;
+	z-index: 1;
 }
 
 .mission-statement {
-
 	color: #EEE;
 	margin: 30px auto;
 	width: 85%;
 	opacity: 0;
 	line-height: 1.5em;
+	z-index: 1;
 }
 
 .home-welcome {
@@ -956,6 +981,7 @@ a:hover, a:active {
 	color: #DDD;
 	opacity: 0;
 	float: left;
+	z-index: 1;
 }
 
 .site-info-home {
@@ -967,7 +993,7 @@ a:hover, a:active {
 	top: 25vh;
 	width: 100%;
 	height: auto;
-	z-index: -99999;
+	z-index: -5;
 }
 
 #gold-wrapper {

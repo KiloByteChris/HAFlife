@@ -12,3 +12,4 @@
 - Add site logo to the top of the menu
 - What if I change the nav links the the butler font?
 - Document what I'm doing as I go so that I'll have a lot to say in the portfolio write up.
+- When the menu is active, turn up the yellow enough to wash out the backgrounf
