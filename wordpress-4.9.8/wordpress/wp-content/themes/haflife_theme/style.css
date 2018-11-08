@@ -1040,6 +1040,11 @@ a:hover, a:active {
 
 /*-------------------------------------------------------------
 ARTISTS PAGE-----*/
+
+.entry-content {
+	margin-top: 0;
+}
+
 .entry-title {
 	font-family: 'butler';
 	color: #eee;
@@ -1047,8 +1052,8 @@ ARTISTS PAGE-----*/
 	font-size: 3em;
 	color: #EEE;
 	text-shadow: 1px 1px #aaa;
-	/* margin-left: 20px; */
 	text-align: center;
+	margin-top: 0px;
 	margin-bottom: 0px;
 }
 
@@ -1103,6 +1108,17 @@ p {
 
 .social-links a:hover {
 	color: #FFD700;
+}
+
+/* FOOTER */
+.site-footer {
+	background-color: rgba(0, 0, 0, 0);
+	color: #DDD;
+}
+
+.site-footer a{
+	color: #EEE;
+
 }
 /*--------------------------------------------------------------
 ## Comments
