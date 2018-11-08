@@ -137,13 +137,6 @@ function haflife_theme_scripts() {
 
 	wp_enqueue_script( 'haflife_theme-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
 
-	// Font Aweseome
-	// wp_enqueue_style('font-awesome', 'https://use.fontawesome.com/releases/v5.0.13/css/all.css');
-	wp_enqueue_style('font-awesome', 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css', array(), $ver = null);
-	//Google Font
-
-	wp_enqueue_style('Libre Baskerville', 'href="https://fonts.googleapis.com/css?family=Libre+Baskerville');
-
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}

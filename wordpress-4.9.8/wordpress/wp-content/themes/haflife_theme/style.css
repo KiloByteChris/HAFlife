@@ -992,15 +992,16 @@ a:hover, a:active {
 
 .background-logo {
 	position: fixed;
-	top: 25vh;
+	top: 100px;
 	width: 100%;
 	height: auto;
 	z-index: -5;
+	opacity: 0;
 }
 
 .background-logo-pages {
 	position: fixed;
-	top: 25vh;
+	top: 100px;
 	width: 100%;
 	height: auto;
 	z-index: -5;
@@ -1058,12 +1059,51 @@ ARTISTS PAGE-----*/
 }
 
 .artist-bio {
-	width: 80%;
 	margin: 0 auto;
 	color: #EEE;
 	font-family: arial;
 }
 
+h2 {
+	width: 90%;
+	margin: 20px auto 10px;
+	color: #EEE;
+	font-family: 'butler';
+	font-weight: 300;
+}
+
+p {
+	width: 90%;
+	margin: 10px auto;
+	color: #EEE;
+}
+
+.social-links {
+	list-style-type: none;
+	text-align: center;
+	width: 80%;
+	padding: 0;
+	margin: 0 auto;
+}
+
+.social-links li{
+	display: inline-block;
+	width: 50px;
+}
+
+.social-links a {
+	font-size: 1.7em;
+	color: #FFF;
+}
+
+.wp-block-embed-spotify {
+	width: 80%;
+	margin: 10px auto;
+}
+
+.social-links a:hover {
+	color: #FFD700;
+}
 /*--------------------------------------------------------------
 ## Comments
 --------------------------------------------------------------*/
