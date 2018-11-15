@@ -37,24 +37,26 @@
 			button.setAttribute( 'aria-expanded', 'false' );
 			jQuery('#mobile-menu-container').animate({opacity: '0'}, [200]);
 			jQuery('#mobile-menu-container').css({display: 'none'});
-			jQuery('.home-tagline, .mission-statement, .home-welcome').fadeTo(200, 1);
+			jQuery('.entry-title, .home-tagline, .mission-statement, .home-welcome').fadeTo(200, 1);
 			jQuery('#gold-wrapper').fadeTo(200, .5);
 			//PAGES MENU TOGGLE OFF
 			jQuery('.gold-wrapper-pages').fadeTo(200, .5);
 			jQuery('.artist-content').fadeTo(200, 1);
 			jQuery('.site-footer').fadeTo(200, 1);
+			jQuery('.ig-block').fadeTo(200, 1);
 		} else {
 			//TOGGLE MENU ON
 			container.className += ' toggled';
 			button.setAttribute( 'aria-expanded', 'true' );
 			menu.setAttribute( 'aria-expanded', 'true' );
-			jQuery('.home-tagline, .mission-statement, .home-welcome').fadeOut(400, 0);
+			jQuery('.entry-title, .home-tagline, .mission-statement, .home-welcome').fadeOut(400, 0);
 			jQuery('#mobile-menu-container').css({display: 'block'});
 			jQuery('#mobile-menu-container').animate({opacity: '1'}, [800]);
 			jQuery('#gold-wrapper').animate({opacity: '1'}, [800]);
 			//PAGES TOGGLE MENU ON
 			jQuery('.gold-wrapper-pages').animate({opacity: '1'}, [800]);
 			jQuery('.artist-content').fadeOut(500, 0);
+			jQuery('.ig-block').fadeOut(500, 0);
 			jQuery('.site-footer').fadeOut(500, 0);
 		}
 	};

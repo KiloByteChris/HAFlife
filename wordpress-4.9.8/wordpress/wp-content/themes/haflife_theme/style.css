@@ -668,9 +668,11 @@ a:hover, a:active {
 	margin: 0px auto;
 }
 
+.primary-menu a{
+	font-size: 2em;
+}
 .main-navigation ul {
 	font-family: 'butler';
-	font-size: 1.3em;
 	list-style: none;
 	margin: 0;
 	padding-left: 0;
@@ -679,9 +681,21 @@ a:hover, a:active {
 }
 
 .primary-contact-list {
-	/* text-align: center; */
-	font-size: 1.2em;
+	font-size: .5em;
 	color: #EEE;
+	float: left;
+	width: 100%;
+	text-align: center;
+}
+
+.primary-contact-list li{
+	display: inline-block;
+	text-align: center;
+	float: left;
+}
+
+.primary-contact-list li a{
+	display: block;
 }
 
 .primary-contact-list li:hover {
@@ -720,14 +734,14 @@ a:hover, a:active {
 	left: auto;
 }
 
-.main-navigation li {
+/* .main-navigation li {
 	/* float: left; */
 	font-size: 1.3em;
 	position: relative;
 	line-height: 2.2em;
 	width: 100%;
 	/* width: inherit; */
-}
+} */
 
 /* .main-navigation li:first-child {
 	padding-top: 10vh;
@@ -764,6 +778,7 @@ a:hover, a:active {
 	position: fixed;
 	top: 20px;
 	right: 20px;
+	z-index: 99 !important;
 }
 
 .menu-toggle:focus {
@@ -1114,11 +1129,17 @@ p {
 .site-footer {
 	background-color: rgba(0, 0, 0, 0);
 	color: #DDD;
+	min-height: 100px;
+	/* border-top: 1px solid #444; */
+	margin-top: 100px;
 }
 
 .site-footer a{
 	color: #EEE;
+}
 
+.site-footer p{
+	font-size: .7em;
 }
 /*--------------------------------------------------------------
 ## Comments
