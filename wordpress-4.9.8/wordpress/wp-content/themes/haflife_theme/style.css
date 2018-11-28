@@ -638,7 +638,6 @@ a:hover, a:active {
 .main-navigation {
 	clear: both;
 	display: block;
-	/* float: left; */
 	width: 100%;
 	position: fixed;
 }
@@ -669,8 +668,9 @@ a:hover, a:active {
 }
 
 .primary-menu a{
-	font-size: 2em;
+	font-size: 2.3em;
 }
+
 .main-navigation ul {
 	font-family: 'butler';
 	list-style: none;
@@ -681,17 +681,18 @@ a:hover, a:active {
 }
 
 .primary-contact-list {
-	font-size: .5em;
+	position: absolute;
+	bottom: 20px;
+	font-size: 1.2em;
 	color: #EEE;
-	float: left;
-	width: 100%;
+	width: 50%;
 	text-align: center;
 }
 
 .primary-contact-list li{
 	display: inline-block;
 	text-align: center;
-	float: left;
+	margin: 0 5px 0 5px;
 }
 
 .primary-contact-list li a{
@@ -734,18 +735,12 @@ a:hover, a:active {
 	left: auto;
 }
 
-/* .main-navigation li {
-	/* float: left; */
-	font-size: 1.3em;
+#primary-menu {
+	font-size: 1.5em;
 	position: relative;
 	line-height: 2.2em;
 	width: 100%;
-	/* width: inherit; */
-} */
-
-/* .main-navigation li:first-child {
-	padding-top: 10vh;
-} */
+}
 
 .main-navigation a {
 	display: block;
@@ -970,6 +965,11 @@ a:hover, a:active {
 	display: none;
 }
 
+#home-spacer {
+	background-color: rgba(0, 0, 0, 0);
+	height: 100vh;
+}
+
 .home-tagline {
 	font-family: 'Butler';
 	font-weight: 100;
@@ -977,7 +977,7 @@ a:hover, a:active {
 	width: 150px;
 	color: #EEE;
 	font-size: 2em;
-	opacity: 0;
+	/* opacity: 0; */
 	z-index: 1;
 }
 
@@ -985,7 +985,7 @@ a:hover, a:active {
 	color: #EEE;
 	margin: 30px auto;
 	width: 85%;
-	opacity: 0;
+	/* opacity: 0; */
 	line-height: 1.5em;
 	z-index: 1;
 }
@@ -996,7 +996,7 @@ a:hover, a:active {
 	margin: 10px auto;
 	width: 90%;
 	color: #DDD;
-	opacity: 0;
+	/* opacity: 0; */
 	float: left;
 	z-index: 1;
 }

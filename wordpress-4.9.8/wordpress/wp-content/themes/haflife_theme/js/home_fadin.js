@@ -6,16 +6,27 @@
  */
 
 jQuery(document).ready( function(){
-    jQuery('.background-logo').fadeTo(800, 1);
-    jQuery('#gold-wrapper').fadeTo(1600, .3);
-    jQuery('.home-tagline, .mission-statement, .home-welcome').delay(800).fadeTo(1600, 1);
-    jQuery('.background-logo').fadeTo(1600, .1);
-    //Old OnClick style display
-    // jQuery('#content').click( function() {
-    //     jQuery('.home-tagline').fadeTo(800, 1);
-    //     jQuery('.mission-statement').fadeTo(800, 1);
-    //     jQuery('.home-welcome').fadeTo(800, 1);
-    //     jQuery('#gold-wrapper').fadeTo(800, .3);
-    //     jQuery('.background-logo').fadeTo(800, .1);
-    // })
+    var scrollStart = jQuery(window).scrollTop();
+    var backgroundLogo = jQuery('.background-logo');
+    var goldWrapper = jQuery('#gold-wrapper');
+    backgroundLogo.fadeTo(600, 1);
+    // if(scrollStart <= 49) {
+    //     backgroundLogo.delay(800).css({opacity: '1'});
+    //     goldWrapper.css({opacity: '0'});
+    // }
+    // if(scrollStart > 49){
+    //     backgroundLogo.css({opacity: '.1'});
+    //     goldWrapper.css({opacity: '.3'});
+    // }
+    jQuery( window ).scroll(function() {
+        var scrollPosition = jQuery(window).scrollTop();
+        // if(scrollPosition <= 49 ) {
+        //     backgroundLogo.fadeTo(800, 1);
+        //     goldWrapper.fadeTo(800, 0);
+        // }
+        if(scrollPosition > 49 ) {
+            backgroundLogo.fadeTo(800, .1);
+            goldWrapper.fadeTo(800, .3);
+        }
+    });
 });
