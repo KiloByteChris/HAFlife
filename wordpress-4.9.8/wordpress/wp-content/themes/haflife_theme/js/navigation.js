@@ -7,6 +7,23 @@
 ( function() {
 	var container, button, menu, links, i, len;
 
+	// Select elements used to display the mobile menu
+	var mobileMenuContainer = document.getElementById('#mobile-menu-container');
+	var goldWrapper = document.getElementById('#gold-wrapper');
+	var backgroundLogo = document.getElementsByClassName('.background-logo');
+	var homeTitle = document.getElementById('#home-title');
+	var entryTitle = document.getElementsByClassName('.entry-title');
+	var homeTagline = document.getElementsByClassName('.home-tagline');
+	var missionStatement = document.getElementsByClassName('.mission-statement');
+	var homeWelcome = document.getElementsByClassName('.home-welcome');
+	var goldWrapperPages = document.getElementsByClassName('.gold-wrapper-pages');
+	var artistContent = document.getElementsByClassName('.artist-content');
+	var siteFooter = document.getElementsByClassName('.site-footer');
+	var igBlock = document.getElementsByClassName('.ig-block');
+
+	// Set variable values for the menu animations
+	var homeFadeInValue = 150;
+
 	container = document.getElementById( 'site-navigation' );
 	if ( ! container ) {
 		return;
@@ -32,20 +49,28 @@
 
 	button.onclick = function() {
 		if ( -1 !== container.className.indexOf( 'toggled' ) ) {
-			//TOGGLE MENU OFF
+			//HOMEPAGE TOGGLE MENU OFF
 			container.className = container.className.replace( ' toggled', '' );
 			button.setAttribute( 'aria-expanded', 'false' );
+			// Query the window for scroll position. Scroll position is used to tell if the logo has been faded yet.
+			var scrollPosition = jQuery(window).scrollTop();
+			// Query the opacity of the logo. Used as an error catch on opacity transitions.
+	        var logoOpacity = jQuery('background-logo').css('opacity');
+			if(scrollPosition <= homeFadeInValue){
+				jQuery('#gold-wrapper').fadeTo(200, 0);
+			}else if(scrollPosition > homeFadeInValue){
+				jQuery('#gold-wrapper').fadeTo(200, .3);
+			}
 			jQuery('#mobile-menu-container').animate({opacity: '0'}, [200]);
 			jQuery('#mobile-menu-container').css({display: 'none'});
 			jQuery('.entry-title, .home-tagline, .mission-statement, .home-welcome').fadeTo(200, 1);
-			jQuery('#gold-wrapper').fadeTo(200, .5);
 			//PAGES MENU TOGGLE OFF
 			jQuery('.gold-wrapper-pages').fadeTo(200, .5);
 			jQuery('.artist-content').fadeTo(200, 1);
 			jQuery('.site-footer').fadeTo(200, 1);
 			jQuery('.ig-block').fadeTo(200, 1);
 		} else {
-			//TOGGLE MENU ON
+			//HOMEPAGE TOGGLE MENU ON
 			container.className += ' toggled';
 			button.setAttribute( 'aria-expanded', 'true' );
 			menu.setAttribute( 'aria-expanded', 'true' );
