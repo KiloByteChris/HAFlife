@@ -1092,8 +1092,26 @@ ARTISTS PAGE-----*/
 }
 
 .artist-profile-image {
+	width: 94%;
 	height: auto;
 	margin: 0px auto;
+	margin-bottom: -15px;
+}
+
+.bio-header {
+	width: 100%;
+	float: left;
+	margin: 0;
+	padding-left: 10px;
+	padding-right: 10px;
+	background-color: rgba(10, 10, 10, .6)
+}
+
+.page-subheader {
+	width: 100%;
+	margin: 0;
+	padding-left: 10px;
+	padding-right: 10px;
 }
 
 .artist-bio {
@@ -1102,12 +1120,35 @@ ARTISTS PAGE-----*/
 	font-family: arial;
 }
 
+.bio-subheader {
+	margin: 0;
+	width: 100%;
+	padding-left: 10px;
+	padding-right: 10px;
+	background-color: rgba(10, 10, 10, .6)
+}
+
+.bio-list {
+	margin: 0;
+	width: 100%;
+	padding-left: 35px;
+	padding-right: 35px;
+	background-color: rgba(10, 10, 10, .6)
+}
+
 h2 {
 	width: 90%;
-	margin: 20px auto 10px;
+	margin: 20px auto 5px;
 	color: #EEE;
 	font-family: 'butler';
 	font-weight: 300;
+	font-size: 2em;
+}
+
+h3 {
+	margin-left: 20px;
+	font-size: 1.2em;
+	color: #FFF;
 }
 
 p {
