@@ -1050,7 +1050,10 @@ a:hover, a:active {
 	background-repeat: no-repeat;
 	top: 0;
 	z-index: -1;
-	background-color: #ffd700;
+	/* background-color: #ffd700; */
+	/* background-color: #c49c48; */
+	/* background-color: #DAA520; */
+	background-color: #ffff00;
 	opacity: 0;
 }
 
@@ -1089,7 +1092,6 @@ ARTISTS PAGE-----*/
 }
 
 .artist-profile-image {
-	width: 80%;
 	height: auto;
 	margin: 0px auto;
 }
@@ -1117,7 +1119,7 @@ p {
 .social-links {
 	list-style-type: none;
 	text-align: center;
-	width: 80%;
+	width: 90%;
 	padding: 0;
 	margin: 0 auto;
 }

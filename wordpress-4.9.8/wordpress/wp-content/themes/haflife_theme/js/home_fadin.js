@@ -14,12 +14,12 @@ jQuery(document).ready( function(){
     var goldWrapper = jQuery('#gold-wrapper');
     var homeFadeWrapper = jQuery('#home-fade-wrapper');
     // backgroundLogo.fadeTo(600, 1);
-    if(scrollStart <= 150) {
+    if(scrollStart <= 10) {
         //backgroundLogo.delay(800).css({opacity: '1'});
         //goldWrapper.css({opacity: '0'});
         homeFadeWrapper.css({opacity: '0'});
     }
-    if(scrollStart > 150){
+    if(scrollStart > 10){
         //backgroundLogo.css({opacity: '.1'});
         //goldWrapper.css({opacity: '.3'});
         homeFadeWrapper.css({opacity: '.3'});
@@ -27,16 +27,16 @@ jQuery(document).ready( function(){
     jQuery( window ).scroll(function() {
         var scrollPosition = jQuery(window).scrollTop();
         //var logoOpacity = backgroundLogo.css('opacity');
-        if(scrollPosition <= 150 /*&& logoOpacity <= .5*/){
+        if(scrollPosition <= 10 /*&& logoOpacity <= .5*/){
             //backgroundLogo.css({opacity: '1'});
             //goldWrapper.css({opacity: '0'});
             homeFadeWrapper.css({opacity: '0'});
             jQuery('body.custom-background').css({backgroundImage: 'url(http://localhost/HAFlife/wordpress-4.9.8/wordpress/wp-content/uploads/2018/11/background_logo_large.png)'});
-        }else if(scrollPosition > 150 /*&& logoOpacity > .5*/){
+        }else if(scrollPosition > 10 /*&& logoOpacity > .5*/){
             //backgroundLogo.css({opacity: '.1'});
             //goldWrapper.css({opacity: '.3'});
-            homeFadeWrapper.css({opacity: '.3'});
-            jQuery('body.custom-background').css({backgroundImage: 'url(http://localhost/HAFlife/wordpress-4.9.8/wordpress/wp-content/uploads/2018/12/background_logo_large_opacity10.png)'});
+            homeFadeWrapper.css({opacity: '.2'});
+            jQuery('body.custom-background').css({backgroundImage: 'url(http://localhost/HAFlife/wordpress-4.9.8/wordpress/wp-content/uploads/2018/12/background_logo_large_opacity5.png)'});
             // jQuery('body').css({backgroundImage: 'url(http://localhost/HAFlife/wordpress-4.9.8/wordpress/wp-content/uploads/2018/12/background_logo_large_opacity30.png)'});
         }
     });
