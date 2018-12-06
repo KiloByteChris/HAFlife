@@ -7,20 +7,6 @@
 ( function() {
 	var container, button, menu, links, i, len;
 
-	// Select elements used to display the mobile menu
-	var mobileMenuContainer = document.getElementById('#mobile-menu-container');
-	var goldWrapper = document.getElementById('#gold-wrapper');
-	var backgroundLogo = document.getElementsByClassName('.background-logo');
-	var homeTitle = document.getElementById('#home-title');
-	var entryTitle = document.getElementsByClassName('.entry-title');
-	var homeTagline = document.getElementsByClassName('.home-tagline');
-	var missionStatement = document.getElementsByClassName('.mission-statement');
-	var homeWelcome = document.getElementsByClassName('.home-welcome');
-	var goldWrapperPages = document.getElementsByClassName('.gold-wrapper-pages');
-	var artistContent = document.getElementsByClassName('.artist-content');
-	var siteFooter = document.getElementsByClassName('.site-footer');
-	var igBlock = document.getElementsByClassName('.ig-block');
-
 	// Set variable values for the menu animations
 	var homeFadeInValue = 150;
 

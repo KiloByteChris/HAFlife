@@ -772,11 +772,14 @@ a:hover, a:active {
 	width: 40px;
 	position: fixed;
 	top: 20px;
-	right: 20px;
+	right: 5px;
 	z-index: 99 !important;
 }
 
 .menu-toggle:focus {
+	border: none;
+}
+.menu-toggle:hover {
 	border: none;
 }
 
@@ -959,6 +962,11 @@ a:hover, a:active {
 /*-----------------------------------------------------------------
  MAIN CSS ---------------------------------------------------------
 -------------------------------------------------------------------*/
+#masthead {
+	position: relative;
+	z-index: 5;
+}
+
 /* Home PAGE */
 
 .home-title {
@@ -1067,7 +1075,7 @@ a:hover, a:active {
 	padding-top: 39%;
 	background-repeat: no-repeat;
 	top: 0;
-	z-index: -1;
+	z-index: -2;
 	background-color: #ffd700;
 	opacity: .3;
 }
@@ -1077,6 +1085,11 @@ ARTISTS PAGE-----*/
 
 .entry-content {
 	margin-top: 0;
+}
+
+.conent-area {
+	position: relative;
+	z-index: 1;
 }
 
 .entry-title {
@@ -1099,15 +1112,18 @@ ARTISTS PAGE-----*/
 }
 
 .bio-header {
+	/* font-family: 'butler'; */
 	width: 100%;
 	float: left;
 	margin: 0;
 	padding-left: 10px;
 	padding-right: 10px;
-	background-color: rgba(10, 10, 10, .6)
+	background-color: rgba(10, 10, 10, .6);
+	font-weight: 200;
 }
 
 .page-subheader {
+	font-family: 'butler';
 	width: 100%;
 	margin: 0;
 	padding-left: 10px;
@@ -1121,6 +1137,7 @@ ARTISTS PAGE-----*/
 }
 
 .bio-subheader {
+	font-family: 'butler';
 	margin: 0;
 	width: 100%;
 	padding-left: 10px;
@@ -1129,11 +1146,16 @@ ARTISTS PAGE-----*/
 }
 
 .bio-list {
+	font-family: 'pt sans';
 	margin: 0;
 	width: 100%;
 	padding-left: 35px;
 	padding-right: 35px;
 	background-color: rgba(10, 10, 10, .6)
+}
+
+.about-p {
+	padding-bottom: 5px;
 }
 
 h2 {
@@ -1182,6 +1204,11 @@ p {
 
 .social-links a:hover {
 	color: #FFD700;
+}
+
+.ig-block{
+	position: relative;
+	z-index: 1 !important;
 }
 
 /* FOOTER */
