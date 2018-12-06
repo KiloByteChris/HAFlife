@@ -15,6 +15,8 @@
 	</header><!-- .entry-header -->
 	<?php haflife_theme_post_thumbnail(); ?>
 	<div class="entry-content">
+		<div class="gold-wrapper-pages"></div>
+		<div class="gold-wrapper-pages"></div>
 		<?php
 		the_content();
 		?>

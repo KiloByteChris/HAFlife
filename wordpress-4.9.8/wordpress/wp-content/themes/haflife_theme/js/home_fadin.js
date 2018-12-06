@@ -14,7 +14,7 @@ jQuery(document).ready( function(){
     var scrollCount = 0;
     // Select the elements on the page
     var goldWrapper = jQuery('#gold-wrapper');
-    var homeFadeWrapper = jQuery('#home-fade-wrapper');
+    var homeFadeWrapper = jQuery('.home-fade-wrapper');
     // Set the number of pixels before the fade in
     var fadePosition = 150;
     // Check to see how for the window has scrolled. Set the opacity of the wrapper.

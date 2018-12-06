@@ -1,6 +1,6 @@
 <?php
 /**
- * Template part for displaying the home page HAFLife ENT
+ * Template part for displaying posts
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
@@ -13,9 +13,9 @@
 	<header class="entry-header">
 		<?php
 		if ( is_singular() ) :
-			the_title( '<h1 class="home-title" id="home-title">', '</h1>' );
+			the_title( '<h1 class="entry-title">', '</h1>' );
 		else :
-			the_title( '<h2 class="home-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
+			the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
 		endif;
 
 		if ( 'post' === get_post_type() ) :
@@ -31,7 +31,8 @@
 
 	<?php haflife_theme_post_thumbnail(); ?>
 
-	<div class="HAFLife-entry-content">
+	<div class="entry-content">
+		<div class="gold-wrapper-pages"></div>
 		<?php
 		the_content( sprintf(
 			wp_kses(
